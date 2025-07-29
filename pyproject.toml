@@ -29,7 +29,7 @@ classifiers = [
 		"Topic :: Utilities"
 	]
 dependencies = []  # URI has no direct runtime dependencies.
-dynamic = ["version"]
+version = "3.0.0"
 
 [project.urls]
 Repository = "https://github.com/marrow/uri.git"
