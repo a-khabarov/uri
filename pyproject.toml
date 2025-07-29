@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61.2", "setuptools_scm[toml]>=6.2"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "uri"
@@ -44,7 +44,6 @@ test = [
 		'pytest-isort',  # Import ordering.
 		'pytest-mypy',  # Static type validation.
 		'requests',  # Support for the http:// and https:// protocols.
-		'types-setuptools',  # Typing stubs.
 		'webob',  # Request WSGI environment mocking.
 	]
 development = [  # Development-time dependencies.
@@ -65,7 +64,6 @@ development = [  # Development-time dependencies.
 		'requests',  # Support for the http:// and https:// protocols.
 		'rope',  # Project symbols collection.
 		'twine',  # Python package release tool.
-		'types-setuptools',  # Typing stubs.
 		'webob',  # Request WSGI environment mocking.
 		'wheel',  # "Wheel" package format support.
 	]
@@ -88,9 +86,6 @@ redis = 'uri.scheme:URLScheme'
 postgres = 'uri.scheme:URLScheme'
 postgresql = 'uri.scheme:URLScheme'
 mongodb = 'uri.scheme:URLScheme'
-
-
-[tool.setuptools_scm]
 
 
 [tool.pytest.ini_options]
